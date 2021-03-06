@@ -7,6 +7,10 @@ bootJar {
 }
 
 dependencies {
+    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.11.0'
+    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-annotations', version: '2.11.0'
+
     compile project(':module-basic-db')
+    compile project(':module-basic-utils')
     implementation 'org.springframework.boot:spring-boot-starter-web'
 }

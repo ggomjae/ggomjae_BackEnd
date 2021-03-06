@@ -61,5 +61,6 @@ dependencies {
 project(':api-basic-management') {
     dependencies {
         compile project(':module-basic-db')
+        compile project(':module-basic-utils')
     }
 }
