@@ -15,7 +15,9 @@ GGOMJAE
 
 BASIC
 ============
-기본 basic 설정
+
+module-basic-utils
+* [2021-03-06] CustomMapKey : Map Key가 1개가 아닌 복합일 때, CustomMapKey 구현 후 사용. ( ex : 통계)
 
 미정
 ============
