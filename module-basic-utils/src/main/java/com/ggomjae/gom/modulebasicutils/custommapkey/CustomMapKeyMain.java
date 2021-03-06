@@ -56,13 +56,16 @@ public class CustomMapKeyMain {
 
         Map<CustomMapKey, Long> customMap = new HashMap<>();
 
-        customList.forEach(data -> {
-            if(customMap.containsKey(data)){
-                customMap.put(data,customMap.get(data) + 1L);
-            }else{
-                customMap.put(data,1L);
-            }
-        });
+//        customList.forEach(data -> {
+//            if(customMap.containsKey(data)){
+//                customMap.put(data,customMap.getOrDefault(data, 1L));
+//            }else{
+//                customMap.put(data,1L);
+//            }
+//        });
+
+        // 개선 : 아직도 완벽하지 않음.
+        customList.forEach(data -> customMap.put(data,customMap.getOrDefault(data, 0L) + 1));
 
         for(CustomMapKey key : customMap.keySet() ){
             log.info("Key : {}, Value : {}",key.toString(),customMap.get(key));
