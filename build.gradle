@@ -54,8 +54,10 @@ repositories {
 
 dependencies {
     compile project(':api-basic-management')
+    compile project(':api-qb-management')
     compile project(':module-basic-db')
     compile project(':module-basic-utils')
+    compile project(':module-qb-scheduler')
 }
 
 project(':api-basic-management') {
