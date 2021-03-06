@@ -55,6 +55,7 @@ repositories {
 dependencies {
     compile project(':api-basic-management')
     compile project(':module-basic-db')
+    compile project(':module-basic-utils')
 }
 
 project(':api-basic-management') {

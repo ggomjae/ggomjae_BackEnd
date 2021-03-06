@@ -1,3 +1,5 @@
 rootProject.name = 'backend'
 include ':api-basic-management',
-        ':module-basic-db'
+        ':module-basic-db',
+        ':module-basic-utils'
+
