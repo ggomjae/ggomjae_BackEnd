@@ -11,6 +11,7 @@ GGOMJAE
 * Java backEnd 기술 모음 저장소 [ 멀티모듈로 계속적인 업데이트를 할 예정]
 * Kotlin 도 적용하여 천천히 익숙해질 예정
 * 멀티 모듈이기 때문에 연관된 도메인끼리 네이밍 : [ 분류 ]-[ 도메인 ]-[ 기능 ]
+* 일부 모듈 practice : 연습장  
 -------
 
 BASIC
@@ -18,8 +19,9 @@ BASIC
 
 module-basic-utils
 * [2021-03-06] CustomMapKey : Map Key가 1개가 아닌 복합일 때, CustomMapKey 구현 후 사용. ( ex : 통계)
+* [2021-03-06] StringToTimeStamp : String으로 time을 받아올 경우 ( ex : log 긁기)
 
-미정
+QB [ Quartz + Batch ]
 ============
 미정
 
