@@ -1,4 +1,4 @@
-package com.ggomjae.gom.moduleqbscheduler.batch;
+package com.ggomjae.gom.moduleqbscheduler.batch.reader;
 
 import com.ggomjae.gom.moduleqbscheduler.batch.listcontainer.CustomItemListContainer;
 import lombok.RequiredArgsConstructor;

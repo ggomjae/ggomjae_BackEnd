@@ -5,7 +5,6 @@ import org.springframework.batch.core.configuration.JobLocator;
 import org.springframework.batch.core.configuration.JobRegistry;
 import org.springframework.batch.core.configuration.support.JobRegistryBeanPostProcessor;
 import org.springframework.batch.core.launch.JobLauncher;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.scheduling.quartz.CronTriggerFactoryBean;
@@ -45,6 +44,20 @@ public class QuartzConfig {
     }
 
     @Bean
+    public JobDetailFactoryBean jobDetailFactoryBean2() {
+        JobDetailFactoryBean jobDetailFactoryBean = new JobDetailFactoryBean();
+        jobDetailFactoryBean.setJobClass(QuartzJobLauncher.class);
+        Map<String, Object> map = new HashMap<String, Object>();
+        map.put("jobName", "testJob2");
+        map.put("jobLauncher", jobLauncher);
+        map.put("jobLocator", jobLocator);
+
+        jobDetailFactoryBean.setJobDataAsMap(map);
+
+        return jobDetailFactoryBean;
+    }
+
+    @Bean
     public CronTriggerFactoryBean cronTriggerFactoryBean() {
         CronTriggerFactoryBean cronTriggerFactoryBean = new CronTriggerFactoryBean();
         cronTriggerFactoryBean.setJobDetail(jobDetailFactoryBean().getObject());
@@ -56,9 +69,21 @@ public class QuartzConfig {
     }
 
     @Bean
+    public CronTriggerFactoryBean cronTriggerFactoryBean2() {
+        CronTriggerFactoryBean cronTriggerFactoryBean = new CronTriggerFactoryBean();
+        cronTriggerFactoryBean.setJobDetail(jobDetailFactoryBean2().getObject());
+
+        //run every 20 seconds
+        cronTriggerFactoryBean.setCronExpression("*/20 * * * * ? *");
+
+        return cronTriggerFactoryBean;
+    }
+
+
+    @Bean
     public SchedulerFactoryBean schedulerFactoryBean() {
         SchedulerFactoryBean schedulerFactoryBean = new SchedulerFactoryBean();
-        schedulerFactoryBean.setTriggers(cronTriggerFactoryBean().getObject());
+        schedulerFactoryBean.setTriggers(cronTriggerFactoryBean().getObject(),cronTriggerFactoryBean2().getObject());
         return schedulerFactoryBean;
     }
 }

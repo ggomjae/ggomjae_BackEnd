@@ -23,7 +23,16 @@ module-basic-utils
 
 QB [ Quartz + Batch ]
 ============
-미정
+
+<div>
+    <img align="left" width="100%" src = "https://user-images.githubusercontent.com/43604493/110240764-c447f380-7f90-11eb-99d5-42599a868452.PNG">
+</div>
+-
+
+
+module-qb-scheduler
+* [2021-03-07] Quartz + batch : One Job, One Step ( CustomItem - 1 )
+* [2021-03-08] Quartz + batch : Multi Job, Multi Step, MultiWriter ( CustomItem - 2 )
 
 
 # 끝맺음
