@@ -17,6 +17,9 @@ GGOMJAE
 BASIC
 ============
 
+api-basic-management
+* [2021-03-08] Excel 구현 [ web 의존 필수 ]
+
 module-basic-utils
 * [2021-03-06] CustomMapKey : Map Key가 1개가 아닌 복합일 때, CustomMapKey 구현 후 사용. ( ex : 통계)
 * [2021-03-06] StringToTimeStamp : String으로 time을 받아올 경우 ( ex : log 긁기)
@@ -25,7 +28,7 @@ QB [ Quartz + Batch ]
 ============
 
 <div>
-    <img align="left" width="100%" src = "https://user-images.githubusercontent.com/43604493/110240764-c447f380-7f90-11eb-99d5-42599a868452.PNG">
+    <img align="left" width="100%" src = "https://user-images.githubusercontent.com/43604493/110316302-de93d700-804d-11eb-95fa-7041e8b7a718.PNG">
 </div>
 -
 
