@@ -1,9 +1,6 @@
 package com.ggomjae.gom.modulebasicdb.post;
 
-import lombok.AccessLevel;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 import org.hibernate.annotations.DynamicInsert;
 import org.hibernate.annotations.DynamicUpdate;
 
@@ -26,5 +23,11 @@ public class Post {
 
     @Column(name = "content")
     private String content;
+
+    @Builder
+    public Post(String title, String content){
+        this.title = title;
+        this.content = content;
+    }
 
 }
