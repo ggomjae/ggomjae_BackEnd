@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
-@EntityScan(basePackages = {"com.ggomjae.gom.modulebasicdb"})
+@EntityScan(basePackages = {"com.ggomjae.gom.modulequerydsldb","com.ggomjae.gom.modulebasicdb"})
 @EnableJpaRepositories(basePackages = {"com.ggomjae.gom.apibasicmanagement"})
 @SpringBootApplication
 public class ApiBasicManagementApplication {

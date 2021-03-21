@@ -12,6 +12,7 @@ dependencies {
 
     compile project(':module-basic-db')
     compile project(':module-basic-utils')
+    compile project(':module-querydsl-db')
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation group: 'org.apache.poi', name: 'poi-ooxml', version: '4.0.1'
 }

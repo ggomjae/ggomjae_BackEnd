@@ -2,7 +2,7 @@ package com.ggomjae.gom.apibasicmanagement.service;
 
 import com.ggomjae.gom.apibasicmanagement.dto.TimeDto;
 import com.ggomjae.gom.modulebasicdb.time.Time;
-import com.ggomjae.gom.apibasicmanagement.repository.TimeRepository;
+import com.ggomjae.gom.apibasicmanagement.JPARepository.TimeRepository;
 import com.ggomjae.gom.modulebasicutils.time.StringToTimestemp;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

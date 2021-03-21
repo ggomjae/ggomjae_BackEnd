@@ -58,11 +58,13 @@ dependencies {
     compile project(':module-basic-db')
     compile project(':module-basic-utils')
     compile project(':module-qb-scheduler')
+    compile project(':module-querydsl-db')
 }
 
 project(':api-basic-management') {
     dependencies {
         compile project(':module-basic-db')
         compile project(':module-basic-utils')
+        compile project(':module-querydsl-db')
     }
 }
