@@ -26,6 +26,10 @@ module-basic-utils
 * [2021-03-06] CustomMapKey : Map Key가 1개가 아닌 복합일 때, CustomMapKey 구현 후 사용. ( ex : 통계)
 * [2021-03-06] StringToTimeStamp : String으로 time을 받아올 경우 ( ex : log 긁기)
 
+module-querydsl-db
+* [2021-03-22] querydsl 셋팅 및 구현
+* [2021-03-28] AccessLevel 실험 (Protected 일때, Public 일때 등)
+
 QB [ Quartz + Batch ]
 ============
 

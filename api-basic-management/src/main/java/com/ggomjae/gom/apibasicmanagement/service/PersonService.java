@@ -19,6 +19,7 @@ public class PersonService {
             .name("ggomjae")
             .age(29)
             .build());
+        //Person person = new Person();
     }
 
     @Transactional(readOnly = true)

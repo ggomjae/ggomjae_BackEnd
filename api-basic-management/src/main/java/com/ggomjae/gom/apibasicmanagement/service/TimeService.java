@@ -30,4 +30,8 @@ public class TimeService {
     public void displayTime(){
         timeRepository.findAll();
     }
+
+    public void test(){
+        TimeDto timeDto = new TimeDto();
+    }
 }

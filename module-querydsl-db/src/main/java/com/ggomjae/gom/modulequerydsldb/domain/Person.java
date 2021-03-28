@@ -1,11 +1,12 @@
 package com.ggomjae.gom.modulequerydsldb.domain;
 
+import lombok.AccessLevel;
 import lombok.Builder;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 
-@NoArgsConstructor
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Entity
 public class Person {
 
