@@ -14,6 +14,7 @@ public enum MemberType {
     MemberType(String role, Function<Long, Long> expression){
         this.role = role;
         this.expression = expression;
+        System.out.println(role);
     }
 
     public Long getCost(Long cost){
