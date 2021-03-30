@@ -24,6 +24,7 @@ public class PersonService {
 
     @Transactional(readOnly = true)
     public List<Person> retrieveAllPerson(){
+
         return personRepositoryInterface.retrieveAllPerson();
     }
 }

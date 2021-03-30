@@ -14,10 +14,10 @@ public class PostController {
 
     private final PostService postService;
 
-//    @PostMapping("/post")
-//    public Post savePost(@RequestBody RequestSavePostDto requestDto){
-//        return postService.savePost(requestDto.toPost());
-//    }
+    @PostMapping("/post")
+    public Post savePost(@RequestBody RequestSavePostDto requestDto){
+        return postService.savePost(requestDto.toPost());
+    }
 
     // 만약 찾고 지운다면 , postService.find(1L) 로 찾고 갖고온다음에 deletePost(Post) 를 넘겨줌.
 }

@@ -1,14 +1,17 @@
 package com.ggomjae.gom.apibasicmanagement.controller;
 
+import com.ggomjae.gom.apibasicmanagement.dto.ResponsePersonDto;
 import com.ggomjae.gom.apibasicmanagement.practice.ListContainer;
 import com.ggomjae.gom.apibasicmanagement.service.PersonService;
 import com.ggomjae.gom.apibasicmanagement.service.PostReplyService;
 import com.ggomjae.gom.modulequerydsldb.domain.Person;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @RequiredArgsConstructor
@@ -29,14 +32,16 @@ public class PracticeController {
         postReplyService.saveReply();
     }
 
-    // 미완
-    @PostMapping("/person")
-    public void savePerson(){
-        personService.savePerson();
-    }
 
     @GetMapping("/person")
-    public List<Person> retrieveAllPerson(){
-        return personService.retrieveAllPerson();
+    public List<ResponsePersonDto> retrieveAllPerson(){
+
+        List<Person> list = personService.retrieveAllPerson();
+        List<ResponsePersonDto> dtoList = new ArrayList<>();
+        list.forEach(data -> {
+            dtoList.add(new ResponsePersonDto(data));
+        });
+
+        return dtoList;
     }
 }
