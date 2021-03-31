@@ -25,6 +25,7 @@ api-basic-management
 module-basic-utils
 * [2021-03-06] CustomMapKey : Map Key가 1개가 아닌 복합일 때, CustomMapKey 구현 후 사용. ( ex : 통계)
 * [2021-03-06] StringToTimeStamp : String으로 time을 받아올 경우 ( ex : log 긁기)
+* [2021-03-30] Enum + Functional Interface 적용 : Student, Admin 타입에 따른 Cost 계산
 
 module-querydsl-db
 * [2021-03-22] querydsl 셋팅 및 구현
