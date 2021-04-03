@@ -21,6 +21,7 @@ api-basic-management
 * [2021-03-08] Excel 구현 [ web 의존 필수 ]
 * [2021-03-11] N : 1 - Post Repy 관계에서 DynamicInsert로 구현하였으나 원치않은 결과 나옴 ( 다시 해보기 )
 * [2021-03-21] PostController -> PostService를 갈 때, RequestDto를 넘기는 게 아닌 Entity를 넘긴다. (Domain) 역할 분리.
+* [2021-04-02] Department, Employee N : 1 관계 Proxy Entity & Entity Save 성능 확인 [BLOG에 정리한 부분](https://velog.io/@ggomjae/JPA-N-1-%EA%B4%80%EA%B3%84-Department-Employee%EC%97%90%EC%84%9C-Employee-Entity%EB%A5%BC-%EC%A0%80%EC%9E%A5%ED%95%A0-%EB%95%8C.-Proxy-Entity-%EB%B6%88%EB%9F%AC%EC%98%A4%EA%B8%B0)
 
 module-basic-utils
 * [2021-03-06] CustomMapKey : Map Key가 1개가 아닌 복합일 때, CustomMapKey 구현 후 사용. ( ex : 통계)
