@@ -23,12 +23,9 @@ public class EmployeeService {
     @Transactional
     public void createEmployee(ServiceCreateEmployeeDto serviceCreateEmployeeDto){
 
-        Department proxyDepartment = entityManager.getReference(Department.class, 1L);
-        log.info("proxyObject : {}",proxyDepartment);
-
         // 임시
-        //Department department = departmentRepository.findById(1L).orElseThrow( () -> new RuntimeException("NOT FOUND"));
-        employeeRepository.save(serviceCreateEmployeeDto.toEmployee(proxyDepartment));
+        Department department = departmentRepository.findById(1L).orElseThrow( () -> new RuntimeException("NOT FOUND"));
+        employeeRepository.save(serviceCreateEmployeeDto.toEmployee(department));
     }
 
     @Transactional(readOnly = true)
