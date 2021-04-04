@@ -2,6 +2,7 @@ package com.ggomjae.gom.modulequerydsldb.domain;
 
 
 import lombok.AccessLevel;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
@@ -27,4 +28,11 @@ public class Member {
 
     @Column(name = "time")
     private Timestamp time;
+
+    @Builder
+    public Member(String memberName, Integer memberAge, Timestamp time){
+        this.memberName = memberName;
+        this.memberAge = memberAge;
+        this.time = time;
+    }
 }
