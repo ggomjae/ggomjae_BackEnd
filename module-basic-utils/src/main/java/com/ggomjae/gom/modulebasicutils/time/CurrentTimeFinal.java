@@ -26,7 +26,7 @@ public class CurrentTimeFinal {
 
         log.info("time1 : {}", time1); // 2021-04-05 22:06:34
         log.info("time2 : {}", time2);
-
+////////////////////////////////////////////////////////////////////////////////////////////////
         Calendar calendar = Calendar.getInstance();
 
         String format_time1 = format1.format(calendar.getTime());
@@ -35,6 +35,7 @@ public class CurrentTimeFinal {
         log.info("time1 : {}", format_time1); // 2021-04-05 22:06:34
         log.info("time2 : {}", format_time2);
 
+////////////////////////////////////////////////////////////////////////////////////////////////
         String format_time3 = format1.format (System.currentTimeMillis());
         String format_time4 = format2.format (System.currentTimeMillis());
 
