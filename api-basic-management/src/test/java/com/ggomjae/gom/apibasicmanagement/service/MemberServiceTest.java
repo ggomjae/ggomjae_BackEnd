@@ -3,10 +3,13 @@ package com.ggomjae.gom.apibasicmanagement.service;
 import com.ggomjae.gom.apibasicmanagement.JPARepository.MemberRepository;
 import com.ggomjae.gom.apibasicmanagement.dto.ServiceCreateMemberDto;
 import com.ggomjae.gom.modulequerydsldb.domain.Member;
+import org.aspectj.lang.annotation.Before;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.mockito.junit.jupiter.MockitoSettings;
 import org.mockito.quality.Strictness;
@@ -32,15 +35,13 @@ class MemberServiceTest {
                 .memberAge(29)
                 .memberName("ggomjae")
                 .build();
-        Member member = serviceCreateMemberDto.toMember();
-
-        //when(memberRepository.findById(1L)).thenReturn(Optional.of(member)); -> Optional return 일때
+        
+        memberService.createMemberAfterGetMemberName(serviceCreateMemberDto);
 
         //when
-        given(memberRepository.save(member)).willReturn(member);
-        Member realMember = memberService.createMember(serviceCreateMemberDto);
+        String realMemberName = memberService.createMemberAfterGetMemberName(serviceCreateMemberDto);
 
         //then
-        assertEquals(member, realMember);
+        assertEquals(serviceCreateMemberDto.getMemberName(), realMemberName);
     }
 }

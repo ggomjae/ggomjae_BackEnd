@@ -17,9 +17,9 @@ public class MemberService {
     private final MemberRepository memberRepository;
 
     @Transactional
-    public Member createMember(ServiceCreateMemberDto serviceDto){
-
-        return memberRepository.save(serviceDto.toMember());
+    public String createMemberAfterGetMemberName(ServiceCreateMemberDto serviceDto){
+        Member member = memberRepository.save(serviceDto.toMember());
+        return member.getMemberName();
     }
 
     public String testMethod(){
