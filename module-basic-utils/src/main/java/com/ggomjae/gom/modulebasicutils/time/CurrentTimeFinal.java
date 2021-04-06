@@ -2,6 +2,7 @@ package com.ggomjae.gom.modulebasicutils.time;
 
 import lombok.extern.slf4j.Slf4j;
 
+import java.sql.Timestamp;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
@@ -41,5 +42,12 @@ public class CurrentTimeFinal {
 
         log.info("time1 : {}", format_time3); // 2021-04-05 22:06:34
         log.info("time2 : {}", format_time4);
+
+////////////////////////////////////////////////////////////////////////////////////////////////
+        Timestamp timestamp = new Timestamp(System.currentTimeMillis());
+        log.info("time1 : {}", timestamp);
+
+        SimpleDateFormat sdf = new SimpleDateFormat ("yyyy-MM-dd hh:mm:ss");
+        log.info("time2 : {}", sdf.format(timestamp));
     }
 }
