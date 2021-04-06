@@ -47,7 +47,10 @@ public class CurrentTimeFinal {
         Timestamp timestamp = new Timestamp(System.currentTimeMillis());
         log.info("time1 : {}", timestamp);
 
+        // return : 2021-04-06 22:48:11
+        // 만약에 yyyy-MM-dd 하면 2021-04-06 이 나옵니다.
         SimpleDateFormat sdf = new SimpleDateFormat ("yyyy-MM-dd hh:mm:ss");
         log.info("time2 : {}", sdf.format(timestamp));
+        log.info("time2Type : {}",sdf.format(timestamp).getClass()); // String
     }
 }
