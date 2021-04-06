@@ -27,7 +27,7 @@ module-basic-utils
 * [2021-03-06] CustomMapKey : Map Key가 1개가 아닌 복합일 때, CustomMapKey 구현 후 사용. (ex : 통계)
 * [2021-03-06] StringToTimeStamp : String으로 time을 받아올 경우 (ex : log 긁기)
 * [2021-03-30] Enum + Functional Interface 적용 : Student, Admin 타입에 따른 Cost 계산 [BLOG에 정리한 부분](https://velog.io/@ggomjae/Functional-Interface-Enum-FunctionT-R)
-* [2021-04-05] CurrentTimeFinal(현재시간 3가지), TimeMills(Milli -> String,Timestamp),  
+* [2021-04-05,06] CurrentTimeFinal(현재시간 4가지), TimeMills(Milli -> String,Timestamp),  Timestamp 시간 차이 구하기 (시, 분, 초)
 
 module-querydsl-db
 * [2021-03-22] querydsl 셋팅 및 구현
