@@ -1,0 +1,18 @@
+
+jar {
+    enabled = true
+}
+bootJar {
+    enabled = false
+}
+
+dependencies {
+    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.11.0'
+    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-annotations', version: '2.11.0'
+    compile 'javax.validation:validation-api:2.0.1.Final'
+    compile project(':module-basic-db')
+    compile project(':module-basic-utils')
+    compile project(':module-querydsl-db')
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation group: 'org.apache.poi', name: 'poi-ooxml', version: '4.0.1'
+}

@@ -1,0 +1,11 @@
+
+jar {
+    enabled = true
+}
+bootJar {
+    enabled = false
+}
+
+dependencies {
+    implementation 'org.json:json:20190722'
+}

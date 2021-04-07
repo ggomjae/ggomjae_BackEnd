@@ -1,0 +1,8 @@
+rootProject.name = 'backend'
+include ':api-basic-management',
+        ':module-basic-db',
+        ':module-basic-utils',
+        ':api-qb-management',
+        ':module-qb-scheduler',
+        ':module-querydsl-db'
+
