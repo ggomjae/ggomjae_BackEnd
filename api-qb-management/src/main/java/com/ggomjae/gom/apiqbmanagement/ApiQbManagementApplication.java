@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class ApiQbManagementApplication {
 
-	// reset 
+	// reset
 	public static void main(String[] args) {
 		SpringApplication.run(ApiQbManagementApplication.class, args);
 	}
