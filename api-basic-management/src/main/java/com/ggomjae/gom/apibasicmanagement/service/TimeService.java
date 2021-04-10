@@ -20,7 +20,7 @@ public class TimeService {
     private final TimeRepository timeRepository;
 
     public void saveTime(TimeDto time){
-        Timestamp timestamp = StringToTimestemp.getTimestemp(time.getTime());
+        Timestamp timestamp = StringToTimestemp.getTimestempByNotFormat(time.getTime());
         timeRepository.save(Time.builder()
             .timestamp(timestamp)
             .build());

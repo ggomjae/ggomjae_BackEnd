@@ -37,6 +37,7 @@ BASIC
 * [2021-03-22] querydsl 셋팅 및 구현
 * [2021-03-28] AccessLevel 실험 (Protected 일때, Public 일때 등)
 * [2021-04-04] Member Entity 생성 - GenerationType.IDENTITY , GenerationType.AUTO 차이 [BLOG에 정리한 부분](https://velog.io/@ggomjae/GenerationType.IDENTITY-GenerationType.AUTO-%EC%B0%A8%EC%9D%B4)
+* [2021-04-10] ClusterIndex, Non-ClusterIndex 성능 확인 [BLOG에 정리한 부분](https://velog.io/@ggomjae/Cluster-Index-vs-Non-Cluster-Index-%EC%84%B1%EB%8A%A5-%EB%B9%84%EA%B5%90-%EB%B0%8F-%EC%9D%B4%EB%A1%A0)
 
 QB [ Quartz + Batch ]
 ============
@@ -54,7 +55,7 @@ QB [ Quartz + Batch ]
 
 ### module-algorithm
 
-* [2021-04-09] Fibonacci Algorithm - IntStream.generate + IntSupplier 로 구현 
+* [2021-04-09] Fibonacci Algorithm - IntStream.generate + IntSupplier 로 구현 [BLOG에 정리한 부분](https://velog.io/@ggomjae/%ED%94%BC%EB%B3%B4%EB%82%98%EC%B9%98-%EC%88%98%EC%97%B4-IntSupplier-IntStream.generate-%EA%B3%BC%EC%97%B0-DP%EC%9D%BC%EA%B9%8C)
 
 # 끝맺음
 <br>
