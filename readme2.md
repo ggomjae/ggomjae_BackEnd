@@ -11,7 +11,8 @@ GGOMJAE
 * Java backEnd 기술 모음 저장소 [ 멀티모듈로 계속적인 업데이트를 할 예정]
 * Kotlin 도 적용하여 천천히 익숙해질 예정
 * 멀티 모듈이기 때문에 연관된 도메인끼리 네이밍 : [ 분류 ]-[ 도메인 ]-[ 기능 ]
-* 일부 모듈 practice : 연습장  
+* 일부 모듈 practice : 연습장
+* Algorithm 모듈 : Java 8 ~ 11 로 구현하는 알고리즘
 -------
 
 BASIC
@@ -51,6 +52,9 @@ QB [ Quartz + Batch ]
 * [2021-03-07] Quartz + batch : One Job, One Step ( CustomItem - 1 )
 * [2021-03-08] Quartz + batch : Multi Job, Multi Step, MultiWriter ( CustomItem - 2 )
 
+### module-algorithm
+
+* [2021-04-09] Fibonacci Algorithm - IntStream.generate + IntSupplier 로 구현 
 
 # 끝맺음
 <br>
