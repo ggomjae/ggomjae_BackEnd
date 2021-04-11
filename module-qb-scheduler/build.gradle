@@ -10,4 +10,9 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-quartz'
     implementation 'org.springframework.boot:spring-boot-starter-batch'
     testImplementation 'org.springframework.batch:spring-batch-test'
+    implementation group: 'org.apache.commons', name: 'commons-dbcp2', version: '2.7.0'
+
+    // H2
+    developmentOnly("org.springframework.boot:spring-boot-devtools")
+    runtime('com.h2database:h2')
 }

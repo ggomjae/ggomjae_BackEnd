@@ -8,3 +8,6 @@ spring:
     job:
       enabled: false
   port: 8091
+  h2:
+    console:
+      enabled: true
