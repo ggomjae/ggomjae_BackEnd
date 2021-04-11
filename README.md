@@ -54,6 +54,9 @@ QB [ Quartz + Batch ]
 * [2021-03-07] Quartz + batch : One Job, One Step ( CustomItem - 1 )
 * [2021-03-08] Quartz + batch : Multi Job, Multi Step, MultiWriter ( CustomItem - 2 )
 
+Algorithm 
+============
+
 ### module-algorithm
 
 * [2021-04-09] Fibonacci Algorithm - IntStream.generate + IntSupplier 로 구현 [BLOG에 정리한 부분](https://velog.io/@ggomjae/%ED%94%BC%EB%B3%B4%EB%82%98%EC%B9%98-%EC%88%98%EC%97%B4-IntSupplier-IntStream.generate-%EA%B3%BC%EC%97%B0-DP%EC%9D%BC%EA%B9%8C)
