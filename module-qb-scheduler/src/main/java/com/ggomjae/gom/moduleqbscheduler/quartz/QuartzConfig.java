@@ -79,7 +79,6 @@ public class QuartzConfig {
         return cronTriggerFactoryBean;
     }
 
-
     @Bean
     public SchedulerFactoryBean schedulerFactoryBean() {
         SchedulerFactoryBean schedulerFactoryBean = new SchedulerFactoryBean();

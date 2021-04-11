@@ -4,6 +4,7 @@ spring:
     url: jdbc:mysql://localhost:3306/qb?serverTimezone=UTC&characterEncoding=UTF-8
     username: root
     password: 1234
-
-server:
+  batch:
+    job:
+      enabled: false
   port: 8091

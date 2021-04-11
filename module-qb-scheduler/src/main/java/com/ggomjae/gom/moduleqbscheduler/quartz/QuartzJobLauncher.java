@@ -49,8 +49,6 @@ public class QuartzJobLauncher extends QuartzJobBean {
     protected void executeInternal(JobExecutionContext arg0) throws JobExecutionException {
         JobParameters jobParameters = new JobParametersBuilder().addLong("time", System.currentTimeMillis()).toJobParameters();
 
-
-
         try {
             Job job = jobLocator.getJob(jobName);
             JobExecution jobExecution = jobLauncher.run(job, jobParameters);
