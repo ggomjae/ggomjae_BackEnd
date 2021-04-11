@@ -2,13 +2,14 @@ package com.ggomjae.gom.modulequerydsldb.domain;
 
 
 import com.ggomjae.gom.modulequerydsldb.domain.compositeKey.ClusterIndexEntityKey;
+import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 
 @Getter
-@NoArgsConstructor
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Entity
 public class ClusterIndexEntity {
 
