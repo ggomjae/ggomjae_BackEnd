@@ -5,5 +5,7 @@ include ':api-basic-management',
         ':api-qb-management',
         ':module-qb-scheduler',
         ':module-querydsl-db',
-        ':module-algorithm'
+        ':module-algorithm',
+        ':api-test-utils'
+
 
