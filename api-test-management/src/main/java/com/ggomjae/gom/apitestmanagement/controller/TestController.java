@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/test")
 public class TestController {
 
+
+    // type=throw -> exception
     @GetMapping
     public String throwTestMethod(@RequestParam String type){
         if(type.equals("throw")) {

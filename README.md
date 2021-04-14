@@ -18,8 +18,9 @@ GGOMJAE
 TEST
 ============
 
-### api-test-utils
+### api-test-management
 
+*[2021-04-14] @ControllerAdvice를 이용한 AOP Exception 구현 
 
 
 BASIC
