@@ -21,7 +21,8 @@ TEST
 ### api-test-management
 
 * [2021-04-14] @ControllerAdvice를 이용한 AOP Exception 구현 
-* [2021-04-15] Compile 시 Static Area를 참고하여 Class Method 호출 (Reflection 이용) - [BLOG에 정리한 부분](https://velog.io/write?id=5f026686-afe5-475f-ac91-4ce32ef235f3)
+* [2021-04-15] Compile 시 Static Area를 참고하여 Class Method 호출 (Reflection 이용) 
+* [2021-04-16] ObjectMapper, Entity 를 이용하여 Reflection 확인 [BLOG에 정리한 부분](https://velog.io/@ggomjae/ObjectMapper-JPA-Entity-NoArgsConstructor-Java-Reflection)
 
 BASIC
 ============
