@@ -1,0 +1,31 @@
+package com.ggomjae.gom.apitestmanagement.service;
+
+import com.ggomjae.gom.apitestmanagement.repository.TestRepository;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.Mock;
+import org.mockito.junit.jupiter.MockitoExtension;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+@ExtendWith(MockitoExtension.class)
+class TestServiceTest {
+
+    TestService testService;
+
+    @Mock
+    TestRepository testRepository;
+
+    @BeforeEach
+    private void init() {
+        testService = new TestService(testRepository);
+    }
+
+    @Test
+    public void test_service() {
+
+        Assertions.assertNotNull(testService);
+    }
+}
