@@ -24,6 +24,11 @@ TEST
 * [2021-04-15] Compile 시 Static Area를 참고하여 Class Method 호출 (Reflection 이용) 
 * [2021-04-16] ObjectMapper, Entity 를 이용하여 Reflection 확인 [BLOG에 정리한 부분](https://velog.io/@ggomjae/ObjectMapper-JPA-Entity-NoArgsConstructor-Java-Reflection)
 
+### module-modifycode
+
+* [2021-04-17] ByteBuddy를 이용하여 ByteCode 조작 실습 (간단) [BLOG에 정리한 부분](https://velog.io/@ggomjae/ByteCode-%EC%A1%B0%EC%9E%91-ASM-ByteBuddy-%EC%93%B0%EC%9D%B4%EB%8A%94-%EA%B3%B3-ComponentScan)
+
+
 BASIC
 ============
 

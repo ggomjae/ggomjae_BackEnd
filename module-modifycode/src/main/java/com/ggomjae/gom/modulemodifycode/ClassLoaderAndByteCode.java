@@ -8,7 +8,6 @@ import static net.bytebuddy.matcher.ElementMatchers.named;
 
 public class ClassLoaderAndByteCode {
 
-
     public static void main(String[] args) throws Exception {
         ClassLoader loader = ClassLoaderAndByteCode.class.getClassLoader();
         System.out.println(loader);
@@ -17,9 +16,8 @@ public class ClassLoaderAndByteCode {
         new ByteBuddy().redefine(Gomjae.class)
                 .method(named("call")).intercept(FixedValue.value("GOMJAE!"))
                 .make().saveIn(new File("C:\\Users\\user\\Desktop\\Intellij_project\\ggomjae_BackEnd" +
-                "\\module-modifycode\\build\\classes\\java\\main\\com\\ggomjae\\gom\\modulemodifycode"));
+                "\\module-modifycode\\build\\classes\\java\\main"));
 
-        System.out.println("--");
-        System.out.println(new Gomjae().call());
+         System.out.println(new Gomjae().call());
     }
 }
