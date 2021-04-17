@@ -8,4 +8,5 @@ bootJar {
 
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation group: 'net.bytebuddy', name: 'byte-buddy-gradle-plugin', version: '1.10.1'
 }
