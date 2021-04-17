@@ -7,5 +7,6 @@ include ':api-basic-management',
         ':module-querydsl-db',
         ':module-algorithm',
         ':api-test-utils',
-        ':api-test-management'
+        ':api-test-management',
+        ':module-modifycode'
 
