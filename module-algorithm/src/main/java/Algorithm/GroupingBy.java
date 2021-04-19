@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
 public class GroupingBy {
@@ -34,6 +35,11 @@ public class GroupingBy {
          *  Map<String, List<Person>> result = new HashMap<>();
          */
 
+        Collectors.toList();
+
+        Long peopleCount = people.stream().collect(Collectors.counting());
+        String peopleCityList = people.stream().map(Person::getCity).collect(Collectors.joining(","));
+        System.out.println(peopleCityList);
         Map<String, List<Person>> results = people.stream().collect(Collectors.groupingBy(Person::getCity));
     }
 }
