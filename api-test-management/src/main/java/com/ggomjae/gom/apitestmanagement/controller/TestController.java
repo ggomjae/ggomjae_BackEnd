@@ -1,7 +1,9 @@
 package com.ggomjae.gom.apitestmanagement.controller;
 
 
+import com.ggomjae.gom.apitestmanagement.dto.ResponseTestDto;
 import com.ggomjae.gom.apitestmanagement.exception.UserNotExceptionResponse;
+import com.ggomjae.gom.apitestmanagement.service.TestService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
@@ -10,6 +12,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/test")
 public class TestController {
 
+    private final TestService testService;
 
     // type=throw -> exception
     @GetMapping
@@ -19,5 +22,11 @@ public class TestController {
         }
 
         return "test";
+    }
+
+    // Controller Test
+    @GetMapping("/book/{book_id}")
+    public ResponseTestDto retrieveBook(@PathVariable Long book_id) {
+        return testService.retrieveBook(book_id);
     }
 }

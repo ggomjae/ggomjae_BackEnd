@@ -1,6 +1,6 @@
 package com.ggomjae.gom.apitestmanagement.service;
 
-import com.ggomjae.gom.apitestmanagement.repository.TestRepository;
+import com.ggomjae.gom.apitestmanagement.repository.TestBookRepository;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -14,7 +14,7 @@ class TestServiceTest {
     TestService testService;
 
     @Mock
-    TestRepository testRepository;
+    TestBookRepository testRepository;
 
     @BeforeEach
     private void init() {

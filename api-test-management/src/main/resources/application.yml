@@ -8,3 +8,11 @@ spring:
 
 server:
   port: 8092
+
+---
+logging.level.org.hibernate.SQL: debug            # 로그 형식으로 쿼리 보여주기
+spring.jpa.properties.hibernate.format_sql: true  # 압축된 쿼리를 읽기 좋게 포멧
+spring.jpa.hibernate.ddl-auto: update           # 서버 시작에 테이블 생성
+spring:
+  jpa:
+    generate-ddl: true
