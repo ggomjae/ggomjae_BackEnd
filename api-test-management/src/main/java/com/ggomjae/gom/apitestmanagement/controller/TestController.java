@@ -1,7 +1,7 @@
 package com.ggomjae.gom.apitestmanagement.controller;
 
 
-import com.ggomjae.gom.apitestmanagement.dto.ResponseTestDto;
+import com.ggomjae.gom.apitestmanagement.dto.ResponseBookDto;
 import com.ggomjae.gom.apitestmanagement.exception.UserNotExceptionResponse;
 import com.ggomjae.gom.apitestmanagement.service.TestService;
 import lombok.RequiredArgsConstructor;
@@ -26,7 +26,7 @@ public class TestController {
 
     // Controller Test
     @GetMapping("/book/{book_id}")
-    public ResponseTestDto retrieveBook(@PathVariable Long book_id) {
+    public ResponseBookDto retrieveBook(@PathVariable Long book_id) {
         return testService.retrieveBook(book_id);
     }
 }

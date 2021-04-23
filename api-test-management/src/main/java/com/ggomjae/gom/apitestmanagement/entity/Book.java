@@ -1,6 +1,7 @@
 package com.ggomjae.gom.apitestmanagement.entity;
 
 import lombok.AccessLevel;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
@@ -17,4 +18,9 @@ public class Book {
 
     @Column(name = "content")
     private String content;
+
+    @Builder
+    public Book(String content) {
+        this.content = content;
+    }
 }

@@ -6,17 +6,17 @@ import lombok.NoArgsConstructor;
 
 @Getter
 @NoArgsConstructor
-public class ResponseTestDto {
+public class ResponseBookDto {
 
 	private Long id;
 	private String content;
 
-	private ResponseTestDto(Book book) {
+	private ResponseBookDto(Book book) {
 		this.id = book.getId();
 		this.content = book.getContent();
 	}
 
-	public static ResponseTestDto from(Book book) {
-		return new ResponseTestDto(book);
+	public static ResponseBookDto from(Book book) {
+		return new ResponseBookDto(book);
 	}
 }

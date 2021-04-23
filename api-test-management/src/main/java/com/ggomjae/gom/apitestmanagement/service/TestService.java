@@ -1,6 +1,6 @@
 package com.ggomjae.gom.apitestmanagement.service;
 
-import com.ggomjae.gom.apitestmanagement.dto.ResponseTestDto;
+import com.ggomjae.gom.apitestmanagement.dto.ResponseBookDto;
 import com.ggomjae.gom.apitestmanagement.entity.Book;
 import com.ggomjae.gom.apitestmanagement.repository.TestBookRepository;
 import lombok.RequiredArgsConstructor;
@@ -14,9 +14,9 @@ public class TestService {
 
     private final TestBookRepository testBookRepository;
 
-    public ResponseTestDto retrieveBook(Long bookId) {
+    public ResponseBookDto retrieveBook(Long bookId) {
         Book book = testBookRepository.findById(bookId).orElseThrow( () -> new RuntimeException("NOT FOUND BOOK"));
         log.info("BookId : {}", book.getId());
-        return ResponseTestDto.from(book);
+        return ResponseBookDto.from(book);
     }
 }
