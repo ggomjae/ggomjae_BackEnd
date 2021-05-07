@@ -76,6 +76,11 @@ Algorithm
 
 * [2021-04-09] Fibonacci Algorithm - IntStream.generate + IntSupplier 로 구현 [BLOG에 정리한 부분](https://velog.io/@ggomjae/%ED%94%BC%EB%B3%B4%EB%82%98%EC%B9%98-%EC%88%98%EC%97%B4-IntSupplier-IntStream.generate-%EA%B3%BC%EC%97%B0-DP%EC%9D%BC%EA%B9%8C)
 
+EXTRA BE [블로그](https://velog.io/@ggomjae) 정리 모음
+============
+
+* [2021-05-04] QueryDSl 하나 테이블을 여러번 Join 할 때 alias [BLOG에 정리한 부분](https://velog.io/@ggomjae/QueryDSl-%ED%95%98%EB%82%98-%ED%85%8C%EC%9D%B4%EB%B8%94%EC%9D%84-%EC%97%AC%EB%9F%AC%EB%B2%88-Join-%ED%95%A0-%EB%95%8C-alias)
+
 # 끝맺음
 <br>
 
