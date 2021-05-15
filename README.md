@@ -76,9 +76,9 @@ Algorithm
 
 * [2021-04-09] Fibonacci Algorithm - IntStream.generate + IntSupplier 로 구현 [BLOG에 정리한 부분](https://velog.io/@ggomjae/%ED%94%BC%EB%B3%B4%EB%82%98%EC%B9%98-%EC%88%98%EC%97%B4-IntSupplier-IntStream.generate-%EA%B3%BC%EC%97%B0-DP%EC%9D%BC%EA%B9%8C)
 
-EXTRA BE [블로그](https://velog.io/@ggomjae) 정리 모음
+EXTRA BackEnd 정리 [블로그](https://velog.io/@ggomjae) 정리 모음
 ============
-
+* [2021-04-20] Collect, Collector, Collectors [BLOG에 정리한 부분](https://velog.io/@ggomjae/Collect-Collector-Collectors-OO)
 * [2021-05-04] QueryDSl 하나 테이블을 여러번 Join 할 때 alias [BLOG에 정리한 부분](https://velog.io/@ggomjae/QueryDSl-%ED%95%98%EB%82%98-%ED%85%8C%EC%9D%B4%EB%B8%94%EC%9D%84-%EC%97%AC%EB%9F%AC%EB%B2%88-Join-%ED%95%A0-%EB%95%8C-alias)
 * [2021-05-12] 나는 왜 JPA를 공부하는가? [BLOG에 정리한 부분](https://velog.io/@ggomjae/%EB%82%98%EB%8A%94-%EC%99%9C-JPA%EB%A5%BC-%EA%B3%B5%EB%B6%80%ED%95%98%EB%8A%94%EA%B0%80)
 * [2021-05-14] JPA 영속성 관리 [BLOG에 정리한 부분](https://velog.io/@ggomjae/JPA-%EC%98%81%EC%86%8D%EC%84%B1-%EA%B4%80%EB%A6%AC)
