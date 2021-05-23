@@ -4,6 +4,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.ggomjae.gom.apitestmanagement.dto.RequestJsonArrayDto;
 import com.ggomjae.gom.apitestmanagement.dto.ResponseBookDto;
 import com.ggomjae.gom.apitestmanagement.dto.ResponseBookTestDto;
+import com.ggomjae.gom.apitestmanagement.dto.ResultDto;
 import com.ggomjae.gom.apitestmanagement.service.TestService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -52,6 +53,13 @@ class TestControllerTest {
 	void JSONARRAY_파싱() {
 		List<RequestJsonArrayDto> list = create_JSON();
 
+		List<ResultDto> resultList = new ArrayList<>();
+
+		list.stream().forEach(jsonData -> resultList.addAll(jsonData.getResultDtoList()));
+		resultList.forEach(data -> {
+			// data.getkeyword
+			// data.getUpjong
+		});
 
 	}
 
