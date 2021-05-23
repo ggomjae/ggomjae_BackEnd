@@ -1,6 +1,7 @@
 package com.ggomjae.gom.apitestmanagement.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.ggomjae.gom.apitestmanagement.dto.RequestJsonArrayDto;
 import com.ggomjae.gom.apitestmanagement.dto.ResponseBookDto;
 import com.ggomjae.gom.apitestmanagement.dto.ResponseBookTestDto;
 import com.ggomjae.gom.apitestmanagement.service.TestService;
@@ -9,6 +10,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.web.servlet.MockMvc;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 import static org.mockito.ArgumentMatchers.anyLong;
 import static org.mockito.BDDMockito.given;
@@ -41,5 +46,33 @@ class TestControllerTest {
 						.andExpect(status().isOk())
 						.andExpect(jsonPath("id").value(1L))
 						.andExpect(jsonPath("content").value("content"));
+	}
+	
+	@Test
+	void JSONARRAY_파싱() {
+		List<RequestJsonArrayDto> list = create_JSON();
+
+
+	}
+
+	List<RequestJsonArrayDto> create_JSON() {
+
+		List<String> keywords_1 = Arrays.asList("keyword_1_1","keyword_1_2","keyword_1_3");
+		List<String> keywords_2 = Arrays.asList("keyword_2_1","keyword_2_2","keyword_2_3");
+
+		List<RequestJsonArrayDto> keywordsByUpjong = new ArrayList<>();
+
+		keywordsByUpjong.add(RequestJsonArrayDto.builder()
+						.upjong("upjong_1")
+						.keywords(keywords_1)
+						.build());
+
+		keywordsByUpjong.add(RequestJsonArrayDto.builder()
+						.upjong("upjong_2")
+						.keywords(keywords_2)
+						.build());
+
+
+		return keywordsByUpjong;
 	}
 }
