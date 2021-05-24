@@ -24,6 +24,7 @@ TEST
 * [2021-04-15] Compile 시 Static Area를 참고하여 Class Method 호출 (Reflection 이용) 
 * [2021-04-16] ObjectMapper, Entity 를 이용하여 Reflection 확인 [BLOG에 정리한 부분](https://velog.io/@ggomjae/ObjectMapper-JPA-Entity-NoArgsConstructor-Java-Reflection)
 * [2021-04-24] Controller Test 구현 (Test Dto 이용)
+* [2021-05-23] RequestDto Keywords(List) -> Key : EtoMethod 이용하여 List<ResultDto>    
 
 ### module-modifycode
 
