@@ -86,6 +86,7 @@ EXTRA BackEnd 정리 [블로그](https://velog.io/@ggomjae) 정리 모음
 * [2021-05-12] 나는 왜 JPA를 공부하는가? [BLOG에 정리한 부분](https://velog.io/@ggomjae/%EB%82%98%EB%8A%94-%EC%99%9C-JPA%EB%A5%BC-%EA%B3%B5%EB%B6%80%ED%95%98%EB%8A%94%EA%B0%80)
 * [2021-05-14] JPA 영속성 관리 [BLOG에 정리한 부분](https://velog.io/@ggomjae/JPA-%EC%98%81%EC%86%8D%EC%84%B1-%EA%B4%80%EB%A6%AC)
 * [2021-05-15] JPA 엔티티 매핑 [BLOG에 정리한 부분](https://velog.io/@ggomjae/JPA-%EC%97%94%ED%8B%B0%ED%8B%B0-%EB%A7%A4%ED%95%91)
+* [2021-05-27] JPA 연관관계 기초 [BLOG에 정리한 부분](https://velog.io/@ggomjae/JPA-%EC%97%B0%EA%B4%80%EA%B4%80%EA%B3%84-%EA%B8%B0%EC%B4%88)
 
 # 끝맺음
 <br>
