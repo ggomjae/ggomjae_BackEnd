@@ -79,9 +79,15 @@ Algorithm
 
 EXTRA BackEnd 정리 [블로그](https://velog.io/@ggomjae) 정리 모음
 ============
+
+#### naver
+* [2021-02-01] 양방향 : cascade = CascadeType.ALL 를 써야하는 이유 [BLOG에 정리한 부분](https://blog.naver.com/ggomjae/222228013884)
+* [2021-02-18] JPA 복합키 매핑 ( @EmbeddedId 지향 )  + @EmbeddedId 식별자 관계 [부모,자식,손자] 풀코드 [BLOG에 정리한 부분](https://blog.naver.com/ggomjae/222247631927)
+* [2021-02-18] JPA 복합키 순서 정하기 ( + 그냥 수동으로하기 ) [BLOG에 정리한 부분](https://blog.naver.com/ggomjae/222247900876)
+
+#### velog 
 * [2021-04-16] Repository Interface에 @Repository 를 안써도 되는 이유 [BLOG에 정리한 부분](https://velog.io/@ggomjae/Repository-Interface%EC%97%90-Repository-%EB%A5%BC-%EC%95%88%EC%8D%A8%EB%8F%84-%EB%90%98%EB%8A%94-%EC%9D%B4%EC%9C%A0)
 * [2021-04-20] Collect, Collector, Collectors [BLOG에 정리한 부분](https://velog.io/@ggomjae/Collect-Collector-Collectors-OO)
-* [2021-05-04] 스레드풀, 커넥션풀, InnoDB 버퍼풀 [BLOG에 정리한 부분](https://velog.io/@ggomjae/%EC%8A%A4%EB%A0%88%EB%93%9C%ED%92%80-%EC%BB%A4%EB%84%A5%EC%85%98%ED%92%80-InnoDB-%EB%B2%84%ED%8D%BC%ED%92%80) 
 * [2021-05-04] QueryDSl 하나 테이블을 여러번 Join 할 때 alias [BLOG에 정리한 부분](https://velog.io/@ggomjae/QueryDSl-%ED%95%98%EB%82%98-%ED%85%8C%EC%9D%B4%EB%B8%94%EC%9D%84-%EC%97%AC%EB%9F%AC%EB%B2%88-Join-%ED%95%A0-%EB%95%8C-alias)
 * [2021-05-12] 나는 왜 JPA를 공부하는가? [BLOG에 정리한 부분](https://velog.io/@ggomjae/%EB%82%98%EB%8A%94-%EC%99%9C-JPA%EB%A5%BC-%EA%B3%B5%EB%B6%80%ED%95%98%EB%8A%94%EA%B0%80)
 * [2021-05-14] JPA 영속성 관리 [BLOG에 정리한 부분](https://velog.io/@ggomjae/JPA-%EC%98%81%EC%86%8D%EC%84%B1-%EA%B4%80%EB%A6%AC)
