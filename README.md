@@ -93,6 +93,7 @@ EXTRA BackEnd 정리 [블로그](https://velog.io/@ggomjae) 정리 모음
 * [2021-05-14] JPA 영속성 관리 [BLOG에 정리한 부분](https://velog.io/@ggomjae/JPA-%EC%98%81%EC%86%8D%EC%84%B1-%EA%B4%80%EB%A6%AC)
 * [2021-05-15] JPA 엔티티 매핑 [BLOG에 정리한 부분](https://velog.io/@ggomjae/JPA-%EC%97%94%ED%8B%B0%ED%8B%B0-%EB%A7%A4%ED%95%91)
 * [2021-05-27] JPA 연관관계 기초 [BLOG에 정리한 부분](https://velog.io/@ggomjae/JPA-%EC%97%B0%EA%B4%80%EA%B4%80%EA%B3%84-%EA%B8%B0%EC%B4%88)
+* [2021-06-10] JPA 고급 매핑 [BLOG에 정리한 부분](https://velog.io/@ggomjae/JPA-%EA%B3%A0%EA%B8%89-%EB%A7%A4%ED%95%91)
 
 # 끝맺음
 <br>
